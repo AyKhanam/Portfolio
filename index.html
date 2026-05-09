@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayesha Khanam</title>
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+</head>
+<body>
+
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-container">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="img/logo-img.png" alt="Logo">
+    </div>
+
+    <!-- MENU ICON -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- NAV LINKS -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+
+<!-- HOME -->
+<section id="home" class="name">
+<div class="name-text">
+<h2>Hi, I'm <span>Ayesha Khanam</span></h2>
+<h3>Frontend Developer</h3>
+<p>I design and develop responsive websites that focus <br> on performance, accessibility, and clean user experience.</p>
+
+
+<div class="social-icons">
+<a href="https://www.linkedin.com/in/imayeshakhanam" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="https://github.com/AyKhanam"target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://www.facebook.com/profile.php?id=61577821838319" target="_blank"><i class="fab fa-facebook"target="_blank"></i></a>
+<a href="mailto:ayeshakhanam.uae@gmail.com"target="_blank"><i class="fa-solid fa-envelope"></i></a>
+</div>
+</div>
+
+<div class="hero-img">
+<img src="img/portfolio-img.png" alt="Portfolio Image">
+</div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+
+  <!-- HEADING -->
+  <h1 class="section-title">About Me</h1>
+
+  <div class="about-container">
+
+    <!-- LEFT -->
+    <div class="left-card">
+      <h2>Hello,</h2>
+      <p>
+        I am a Front-End Developer focused on building modern, responsive, and high-performance user interfaces that deliver smooth and intuitive user experiences. I turn ideas and designs into clean, scalable code using HTML, CSS, Bootsrap and JavaScript, with strong attention to detail, accessibility, and cross-browser compatibility. I enjoy solving problems, refining UI interactions, and continuously learning new technologies to stay ahead in the fast-evolving web ecosystem. My goal is to create digital experiences that are not only visually impressive but also functional, efficient, and user-centric.
+      </p>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right-cards">
+
+      <div class="small-card">
+        <h3>Bachelor in Information Technology</h3>
+        <p>Virtual University of Pakistan</p>
+      </div>
+
+      <div class="small-card">
+        <h3>Intermediate in F.sc Pre-Engeeniring</h3>
+        <p>Leadership College of Sialkot, Pakistan</p>
+      </div>
+
+      <div class="small-card">
+        <h3>Matriculation in Computer Science</h3>
+        <p>British Grammer School of Sialkot, Pakistan</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SKILLS 
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+<div class="skill">HTML<div class="bar"><div class="fill" style="width:95%"></div></div></div>
+<div class="skill">CSS<div class="bar"><div class="fill" style="width:90%"></div></div></div>
+<div class="skill">Bootstrap<div class="bar"><div class="fill" style="width:85%"></div></div></div>
+<div class="skill">JavaScript<div class="bar"><div class="fill" style="width:80%"></div></div></div>
+<div class="skill">jQuery<div class="bar"><div class="fill" style="width:70%"></div></div></div>
+</section>-->
+<section id="skills">
+<h1 class="section-title">Skills</h1>
+<div class="skills-grid">
+<div class="skill-card"><i class='fab fa-html5' style='font-size:48px;color:white'></i><h3>HTML</h3></div>
+<div class="skill-card"><i class='fab fa-css3-alt' style='font-size:48px;color:white'></i>
+<h3>CSS</h3></div>
+<div class="skill-card"><i class='fab fa-bootstrap' style='font-size:48px;color:white'></i><h3>Bootstrap</h3></div>
+<div class="skill-card"><i class='fab fa-js' style='font-size:48px;color:white'></i><h3>JavaScript</h3></div>
+<div class="skill-card"><i class='fa-solid fa-code' style='font-size:48px;color:white'></i><h3>jQuery</h3></div>
+<div class="skill-card"><i class='fa-solid fa-pen-nib' style='font-size:48px;color:white'></i><h3>UI/UX Design</h3>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h1 class="section-title">Contact Me</h1>
+<div class="contact-form">
+<form action="https://formspree.io/f/abcd1234" method="POST">
+<input type="text" placeholder="Your Name*" required>
+<input type="email" placeholder="Email*" required>
+<input type="number" placeholder="Contact No (Optional)">
+<textarea rows="5" placeholder="Message*" required></textarea>
+<button>Send Message</button>
+</form>
+</div>
+</section>
+
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+const overlay = document.getElementById("overlay");
+
+menuToggle.onclick = () => {
+  navLinks.classList.toggle("active");
+  overlay.classList.toggle("active");
+};
+
+overlay.onclick = () => {
+  navLinks.classList.remove("active");
+  overlay.classList.remove("active");
+};
+</script>
+
+</body>
+</html>
